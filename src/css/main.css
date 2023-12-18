@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', 'Arial', sans-serif;
+}
+
+/* header */
+
+.main_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+    height: 7vh;
+}
+
+.top_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pet_starvation {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* .pet_starvation__img {
+    background-image: url("https://img.icons8.com/ios/100/empty-dog-bowl.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+} */
+
+.text_in_main_header {
+    padding-left: 10px;
+}
+
+.pet_name {
+    font-size: 28px;
+}
+
+.bottom_row {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* header end */
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.pet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/* main end*/
+
+/* footer */
+
+.main_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.food {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+/* footer end*/
