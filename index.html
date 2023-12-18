@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Game</title>
+
+    <!-- link styles -->
     <link rel="stylesheet" href="./src/css/main.css">
 
+    <!-- link favicon -->
     <link type="image/png" sizes="96x96" rel="icon" href="./src/img/favicon.png">
+
+    <!-- main js script -->
+    <script src="./src/js/main.js"></script>
 </head>
 
 <body>
@@ -18,17 +24,17 @@
                 <!-- pet starvation icon and text -->
                 <img width="50" height="50" class="pet_starvation__img"
                     src="https://img.icons8.com/fluency/48/poultry-leg.png" alt="pet starvation">
-                <span class="text_in_main_header">1/100</span>
+                <span id="pet_starvation__text" class="text_in_main_header">1/100</span>
             </div>
             <div class="pet_name">
                 <!-- pet name -->
-                <span>Shenok</span>
+                <span id="pet_name">Shenok</span>
             </div>
         </div>
         <div class="bottom_row money">
             <!-- money icon and text -->
             <img width="50" height="50" src="https://img.icons8.com/windows/96/money-bill.png" alt="money-bill" />
-            <span class="text_in_main_header">100</span>
+            <span id="money__text" class="text_in_main_header">100</span>
         </div>
     </header>
     <main>
@@ -61,8 +67,8 @@
 
     <footer class="main_footer">
         <div class="food">
-            <img width="96" height="96" src="https://img.icons8.com/emoji/96/bone-emoji.png" alt="bone-emoji" />
-            <img width="96" height="96" src="https://img.icons8.com/ios/100/noodles.png" alt="noodles" />
+            <img id="food1" width="96" height="96" src="https://img.icons8.com/emoji/96/bone-emoji.png" alt="bone-emoji" />
+            <img id="food2" width="96" height="96" src="https://img.icons8.com/ios/100/noodles.png" alt="noodles" />
         </div>
     </footer>
 </body>
