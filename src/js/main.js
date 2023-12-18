@@ -1,35 +1,47 @@
-let petStarvationText = document.querySelector(`#pet_starvation__text`);
-let moneyText = document.querySelector(`#money__text`);
+let petStarvationText = document.getElementById(`pet_starvation__text`);
+let moneyText = document.getElementById(`money__text`);
+let petName = document.getElementById(`pet_name`);
 
-let food1 = document.querySelector(`#food1`);
-let food2 = document.querySelector(`#food2`);
+let food1 = document.getElementById(`food1`);
+let food2 = document.getElementById(`food2`);
 
 let money = 100;
 let petStarvation = 30;
 
-let food1Cost = 30;
-let food2Cost = 50;
+const food1Cost = 30;
+const food2Cost = 50;
 
-let food1Saturation = 30;
-let food2Saturation = 50;
+const food1Saturation = 30;
+const food2Saturation = 50;
 
+let spendHungerTimer;
 
+(function spendHungerTimerFunc() {
+    petStarvation--;
+    if (petStarvation < 0) {
+        clearTimeout(spendHungerTimer);
+        petName.innerHTML = `Your pet is died`;
+    }
+    else {
+        timer = setTimeout(spendHungerTimerFunc, 1000);
+        moneyText.innerHTML = money;
+        petStarvationText.innerHTML = `${petStarvation}/100`;
+    }
+}())
 
 
 food1.addEventListener(`click`, function () {
-    money -= food1Cost;
-    petStarvation += food1Saturation;
-    // переделать нафиг, хрень идея
-    moneyText.innerHTML = money;
-    petStarvationText.innerHTML = petStarvation;
+    if ((money >= food1Cost) && ((petStarvation + food1Saturation) <= 100)) {
+        money -= food1Cost;
+        petStarvation += food1Saturation;
+    }
 })
 
 food2.addEventListener(`click`, function () {
-    money -= food2Cost;
-    petStarvation += food2Saturation;
-    // переделать нафиг, хрень идея
-    moneyText.innerHTML = money;
-    petStarvationText.innerHTML = petStarvation;
+    if ((money >= food2Cost) && ((petStarvation + food2Saturation) <= 100)) {
+        money -= food2Cost;
+        petStarvation += food2Saturation;
+    }
 })
 
 
