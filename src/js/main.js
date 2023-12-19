@@ -18,7 +18,7 @@ let adText = document.querySelector(`.ad_text`);
 
 
 let money = 100;
-let petStarvation = 30;
+let petStarvation = 3;
 
 const food1Cost = 30;
 const food2Cost = 50;
@@ -35,6 +35,7 @@ let adTime = 10;
     petStarvation--;
     if (petStarvation < 0) {
         clearTimeout(spendHungerTimer);
+        endGameText.style.display = `inline`;
         endGameText.innerHTML = `Your pet is died`;
         food1.style.display = `none`;
         food2.style.display = `none`;
