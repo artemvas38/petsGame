@@ -7,6 +7,34 @@ body {
     font-family: 'Kanit', 'Arial', sans-serif;
 }
 
+/* ad */
+
+.ad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(33, 33, 33);
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad_svg {
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    display: none;
+}
+
+.ad span {
+    color: white;
+    font-size: 20px;
+}
+
+/* ad end */
+
 /* header */
 
 .main_header {
@@ -84,10 +112,18 @@ main {
     padding-bottom: 10px;
 }
 
+.all_food {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .food {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    font-size: 24px;
 }
 
 
