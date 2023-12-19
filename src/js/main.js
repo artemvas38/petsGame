@@ -18,7 +18,7 @@ let adText = document.querySelector(`.ad_text`);
 
 
 let money = 100;
-let petStarvation = 3;
+let petStarvation = 40;
 
 const food1Cost = 30;
 const food2Cost = 50;
